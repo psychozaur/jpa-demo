@@ -16,6 +16,7 @@ public class Application {
         SpringApplication.run(Application.class);
     }
 
+    //interfejs funkcyjny, który zostanie wywołany w momencie tworzenia beana; taka trochę metoda init()
     @Bean
     public CommandLineRunner demo(CustomerRepository repository) {
         return (args) -> {
