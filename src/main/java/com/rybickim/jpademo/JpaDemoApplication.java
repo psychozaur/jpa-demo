@@ -25,9 +25,7 @@ public class JpaDemoApplication {
 
             logger.info("Persons found with findAll():");
             logger.info("-------------------------------");
-            for (Person2 person : repository.findAll()) {
-                logger.info(person.toString());
-            }
+            repository.findAll().forEach(person -> logger.info(person.toString()));
             logger.info("");
         };
     }
